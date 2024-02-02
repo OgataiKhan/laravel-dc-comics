@@ -1,5 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
-// body {
-//   background-color: green;
-// }
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.card-img-top {
+  height: 18rem;
+}
