@@ -9,7 +9,7 @@
         <div class="container">
             <h2>{{ $comic->title }}</h2>
 
-            <p><a href="{{ route('comics.index') }}">Go to homepage</a></p>
+            <p><a href="{{ route('comics.index') }}">Go to comics list</a></p>
         </div>
     </main>
 @endsection
