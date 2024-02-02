@@ -7,7 +7,7 @@
 @section('main')
     <main>
         <div class="container">
-            Homepage
+            <a href="{{ route('comics.index') }}">Go to comics</a>
         </div>
     </main>
 @endsection
