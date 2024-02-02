@@ -19,6 +19,7 @@
                                 <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">View details</a>
                             </div>
                         </div>
+                    </li>
                 @endforeach
             </ul>
         </div>
