@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title')
-    Laravel DC Comics
+    Laravel DC Comics - {{ $comic->title }}
 @endsection
 
 @section('main')
     <main>
         <div class="container">
-            Homepage
+            <h2>{{ $comic->title }}</h2>
         </div>
     </main>
 @endsection
