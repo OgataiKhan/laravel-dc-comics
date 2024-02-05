@@ -9,7 +9,7 @@
         <div class="container">
             <h2>Edit Comic</h2>
 
-            <form action="{{ route('comics.update', ['id' => $comic->id]) }}" method="POST">
+            <form action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="POST">
               @csrf
               @method('PUT')
 
@@ -48,7 +48,7 @@
                 {{-- Description --}}
                 <div class="mb-3">
                     <label for="comicDescription" class="form-label">Description</label>
-                    <textarea name="description" value="{{ $comic->description }}" class="form-control" id="comicDescription" rows="3" placeholder="Add a description of the comic..."></textarea>
+                    <textarea name="description" class="form-control" id="comicDescription" rows="3" placeholder="Add a description of the comic...">{{ $comic->description }}</textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

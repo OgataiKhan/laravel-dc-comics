@@ -28,6 +28,8 @@
                       @endforeach
                   </p>
                   <p class="description">{{ $comic->description }}</p>
+                  {{-- Edit link --}}
+                  <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-primary">Edit Comic</a>
                 </div>
                 <div class="cover-box">
                     <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
