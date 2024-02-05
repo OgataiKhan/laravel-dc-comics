@@ -16,7 +16,16 @@
                             <div class="card-body flex-grow-1">
                                 <h5 class="card-title">{{ $comic->title }}</h5>
                                 <p class="card-text">{{ $comic->series }}</p>
-                                <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">View details</a>
+                                <div class="buttons d-flex">
+                                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary me-2">View
+                                        details</a>
+                                    <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+
+                                        <input type="submit" value="Delete" class="btn btn-danger">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </li>
