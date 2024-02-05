@@ -19,7 +19,7 @@
                                 <p class="card-text">{{ $comic->series }}</p>
                                 <div class="buttons d-flex">
                                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary me-2">View
-                                        details</a>
+                                        Details</a>
                                     <!-- Open delete confirmation modal -->
                                     <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                         data-bs-target="#deleteConfirmationModal-{{ $comic->id }}">
