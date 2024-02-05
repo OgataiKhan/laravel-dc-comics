@@ -13,7 +13,7 @@
                 <div class="info">
                     <h4 class="series">{{ $comic->series }}</h4>
                     <p class="type bold"> {{ Str::ucfirst($comic->type) }}</p>
-                    <p class="price"><span class="bold">Price:</span>: {{ $comic->price }}</p>
+                    <p class="price"><span class="bold">Price:</span> {{ $comic->price }}</p>
                     <p class="sale-date"><span class="bold">Sale date:</span> {{ $comic->sale_date }}</p>
                     <p class="artists"><span class="bold">Artists:</span>
                         @php $artists = explode(',', $comic->artists); @endphp
