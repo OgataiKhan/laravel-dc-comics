@@ -9,7 +9,7 @@
         <div class="container">
             <h2>{{ $comic->title }}</h2>
 
-            <div class="details d-flex justify-content-between">
+            <div class="details mb-4 d-flex justify-content-between">
                 <div class="info">
                     <h4 class="series">{{ $comic->series }}</h4>
                     <p class="type bold"> {{ Str::ucfirst($comic->type) }}</p>

@@ -22,9 +22,9 @@
                 {{-- Type --}}
                 <div class="mb-3">
                     <select name="type" class="form-select" aria-label="Comic type">
-                        <option selected>Select comic type...</option>
-                        <option value="comic book">Comic book</option>
-                        <option value="graphic novel">Graphic novel</option>
+                        <option value="">Select comic type...</option>
+                        <option value="comic book" {{ $comic->type == 'comic book' ? 'selected' : '' }}>Comic book</option>
+                        <option value="graphic novel" {{ $comic->type == 'graphic novel' ? 'selected' : '' }}>Graphic novel</option>
                     </select>
                 </div>
                 {{-- Series --}}
