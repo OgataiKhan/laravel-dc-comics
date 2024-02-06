@@ -5,3 +5,7 @@ This is a simple laravel project intended to practice CRUD operations. The "comi
 Update:
 
 Added "Edit Comic" form & "Delete" button with confirmation modal.
+
+Update:
+
+Added form request validation.
